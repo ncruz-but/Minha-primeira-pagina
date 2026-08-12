@@ -19,10 +19,38 @@
             <p>adversarios </p>
         </header>
         <main>
+            <article>
+        <img src="https://f.i.uol.com.br/fotografia/2022/11/21/1669041183637b8c1ff1f38_1669041183_3x2_md.jpg" alt="">
+           <div>
             <h2>seleção brasileira </h2>
             <p>dias de treino </p>
-            <p> </p>nicolas cruz
+            <p> nicolas cruz</p>
+            </div>
+            <button>❤️<span>0</span></button>
+            <button>❤️<span>0</span></button>
+            </article>
+           <article>
             <img src="https://f.i.uol.com.br/fotografia/2022/11/21/1669041183637b8c1ff1f38_1669041183_3x2_md.jpg" alt="">
+            <div>
+         <h2>seleção brasileira </h2>
+         <p>dias de treino </p>
+         <p> nicolas cruz</p>
+         </div>
+             <button>❤️<span>0</span></button>   
+             <button>❤️<span>0</span></button>   
+        </article>
         </main>
     </body>
+    <script>
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function(botao) {
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+});
+    </script>
 </html>    
